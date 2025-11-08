@@ -1,6 +1,6 @@
 # Atomic 3D + Functional Ontology + 50 AI Agents – ULTIMATE DRUG DISCOVERY ENGINE
 
-**THE ONE THAT WORKS EVERYWHERE – ZERO ERRORS – GUARANTEED**
+**THE ONE THAT WORKS EVERYWHERE**
 
 Generates **low-energy 3D conformers**, computes **Gasteiger charges**, **dipole**, **PMI**, **asphericity**, embeds **per-atom 3D coordinates + charges** into a **full OWL ontology**, and launches **50+ atomic-level LLM agents** via Ollama for deep SAR insights.
 
@@ -38,3 +38,4 @@ atomic-3d-ontology-50-agents/
 ├── config/
 │   └── agents.json
 └── .gitignore
+
