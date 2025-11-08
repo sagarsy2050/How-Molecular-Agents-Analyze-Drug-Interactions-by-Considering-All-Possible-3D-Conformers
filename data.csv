@@ -1,0 +1,8 @@
+SMILES,CLASS
+c1ccccc1,Active
+FCc1ccccc1,Active
+CCO,Inactive
+c1ccncc1,Active
+CC(=O)O,Inactive
+CC(N)C(=O)O,Active
+CC(C)CCO,Inactive

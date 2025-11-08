@@ -1,0 +1,1084 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xml:base="http://atomic3d.org/"
+         xmlns="http://atomic3d.org/#">
+
+<owl:Ontology rdf:about="http://atomic3d.org/"/>
+
+<owl:ObjectProperty rdf:about="#has_conformer">
+  <rdfs:domain rdf:resource="#Molecule"/>
+  <rdfs:range rdf:resource="#Conformer"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#has_atom">
+  <rdfs:domain rdf:resource="#Conformer"/>
+  <rdfs:range rdf:resource="#Atom"/>
+</owl:ObjectProperty>
+
+<owl:DatatypeProperty rdf:about="#energy">
+  <rdfs:domain rdf:resource="#Conformer"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#dipole">
+  <rdfs:domain rdf:resource="#Conformer"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#charge">
+  <rdfs:domain rdf:resource="#Atom"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#x">
+  <rdfs:domain rdf:resource="#Atom"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#y">
+  <rdfs:domain rdf:resource="#Atom"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#z">
+  <rdfs:domain rdf:resource="#Atom"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+</owl:DatatypeProperty>
+
+<owl:Class rdf:about="#Molecule">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Conformer">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Atom">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:NamedIndividual rdf:about="#M_0">
+  <rdf:type rdf:resource="#Molecule"/>
+  <has_conformer rdf:resource="#C_0_0"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#C_0_0">
+  <rdf:type rdf:resource="#Conformer"/>
+  <has_atom rdf:resource="#A_0_0_0"/>
+  <has_atom rdf:resource="#A_0_0_1"/>
+  <has_atom rdf:resource="#A_0_0_2"/>
+  <has_atom rdf:resource="#A_0_0_3"/>
+  <has_atom rdf:resource="#A_0_0_4"/>
+  <has_atom rdf:resource="#A_0_0_5"/>
+  <has_atom rdf:resource="#A_0_0_6"/>
+  <has_atom rdf:resource="#A_0_0_7"/>
+  <has_atom rdf:resource="#A_0_0_8"/>
+  <has_atom rdf:resource="#A_0_0_9"/>
+  <has_atom rdf:resource="#A_0_0_10"/>
+  <has_atom rdf:resource="#A_0_0_11"/>
+  <energy rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">13.81663346326446</energy>
+  <dipole rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.004747309942222027</dipole>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#A_0_0_0">
+  <rdf:type rdf:resource="#Atom"/>
+  <charge rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-0.062268570782092456</charge>
+  <x rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.8018704201992092</x>
+  <y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-1.1211126513396983</y>
+  <z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-0.008346590360092306</z>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#A_0_0_1">
+  <rdf:type rdf:resource="#Atom"/>
+  <charge rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-0.062268570782092456</charge>
+  <x rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.3868383757805856</x>
+  <y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.14929844433105113</y>
+  <z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-0.02824203602461326</z>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#A_0_0_2">
+  <rdf:type rdf:resource="#Atom"/>
+  <charge rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-0.062268570782092456</charge>
+  <x rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.5848127699273242</x>
+  <y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.2536314287408628</y>
+  <z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-0.019781644993114123</z>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#A_0_0_3">
+  <rdf:type rdf:resource="#Atom"/>
+  <charge rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-0.062268570782092456</charge>
+  <x rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-0.7852804166645334</x>
+  <y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.110603372439757</y>
+  <z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.008090228728212953</z>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#A_0_0_4">
+  <rdf:type rdf:resource="#Atom"/>
+  <charge rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-0.062268570782092456</charge>
+  <x rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-1.3950662723512703</x>
+  <y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-0.11358542401821685</y>
+  <z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.028168134762878598</z>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#A_0_0_5">
+  <rdf:type rdf:resource="#Atom"/>
+  <charge rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-0.062268570782092456</charge>
+  <x rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-0.5771174439094189</x>
+  <y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-1.244266831546974</y>
+  <z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.019568661804814702</z>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#A_0_0_6">
+  <rdf:type rdf:resource="#Atom"/>
+  <charge rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.062268570782092456</charge>
+  <x rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.3924939700238939</x>
+  <y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-2.026652676109488</y>
+  <z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-0.013968190080473964</z>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#A_0_0_7">
+  <rdf:type rdf:resource="#Atom"/>
+  <charge rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.062268570782092456</charge>
+  <x rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.450885118262296</x>
+  <y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.19154292892137828</y>
+  <z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-0.049432297584507866</z>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#A_0_0_8">
+  <rdf:type rdf:resource="#Atom"/>
+  <charge rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.062268570782092456</charge>
+  <x rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0052443010972498</x>
+  <y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.2563425567293867</y>
+  <z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-0.03467409278525954</z>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#A_0_0_9">
+  <rdf:type rdf:resource="#Atom"/>
+  <charge rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.062268570782092456</charge>
+  <x rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-1.3839205071124052</x>
+  <y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.0259929107635277</y>
+  <z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.013803247676989958</z>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#A_0_0_10">
+  <rdf:type rdf:resource="#Atom"/>
+  <charge rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.062268570782092456</charge>
+  <x rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-2.478996829631094</x>
+  <y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-0.24265123328991745</y>
+  <z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.05032271415597729</z>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#A_0_0_11">
+  <rdf:type rdf:resource="#Atom"/>
+  <charge rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.062268570782092456</charge>
+  <x rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-1.0017634856218403</x>
+  <y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-2.2391428256216854</y>
+  <z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.034491864699186</z>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#M_1">
+  <rdf:type rdf:resource="#Molecule"/>
+  <has_conformer rdf:resource="#C_1_0"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#C_1_0">
+  <rdf:type rdf:resource="#Conformer"/>
+  <has_atom rdf:resource="#A_1_0_0"/>
+  <has_atom rdf:resource="#A_1_0_1"/>
+  <has_atom rdf:resource="#A_1_0_2"/>
+  <has_atom rdf:resource="#A_1_0_3"/>
+  <has_atom rdf:resource="#A_1_0_4"/>
+  <has_atom rdf:resource="#A_1_0_5"/>
+  <has_atom rdf:resource="#A_1_0_6"/>
+  <has_atom rdf:resource="#A_1_0_7"/>
+  <has_atom rdf:resource="#A_1_0_8"/>
+  <has_atom rdf:resource="#A_1_0_9"/>
+  <has_atom rdf:resource="#A_1_0_10"/>
+  <has_atom rdf:resource="#A_1_0_11"/>
+  <has_atom rdf:resource="#A_1_0_12"/>
+  <has_atom rdf:resource="#A_1_0_13"/>
+  <has_atom rdf:resource="#A_1_0_14"/>
+  <energy rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">17.754124906732784</energy>
+  <dipole rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.41261992903435885</dipole>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#A_1_0_0">
+  <rdf:type rdf:resource="#Atom"/>
+  <charge rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-0.24592692985200354</charge>
+  <x rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.564699222871677</x>
+  <y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-0.3192891653443532</y>
+  <z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.3255083926005753</z>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#A_1_0_1">
+  <rdf:type rdf:resource="#Atom"/>
+  <charge rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.1145122012228622</charge>
+  <x rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.153228580929262</x>
+  <y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-0.2525529180883617</y>
+  <z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-0.012775682489796672</z>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#A_1_0_2">
+  <rdf:type rdf:resource="#Atom"/>
+  <charge rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-0.017161258434592496</charge>
+  <x rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.6752756281748985</x>
+  <y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-0.06402939857090446</y>
+  <z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-0.020789986473207192</z>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#A_1_0_3">
+  <rdf:type rdf:resource="#Atom"/>
+  <charge rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-0.05642168220231745</charge>
+  <x rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.1523283819690748</x>
+  <y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.2136794122037704</y>
+  <z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-0.01174482016703469</z>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#A_1_0_4">
+  <rdf:type rdf:resource="#Atom"/>
+  <charge rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-0.06189933557473793</charge>
+  <x rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-1.2215016235122749</x>
+  <y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.347493521048781</y>
+  <z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-0.01960042937509088</z>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#A_1_0_5">
+  <rdf:type rdf:resource="#Atom"/>
+  <charge rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-0.06224561568991283</charge>
+  <x rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-2.021283380262186</x>
+  <y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.21282614797980548</y>
+  <z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-0.036069931378723205</z>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#A_1_0_6">
+  <rdf:type rdf:resource="#Atom"/>
+  <charge rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-0.06189933557473793</charge>
+  <x rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-1.4934982725223402</x>
+  <y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-1.0639933210197616</y>
+  <z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-0.04507458454208764</z>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#A_1_0_7">
+  <rdf:type rdf:resource="#Atom"/>
+  <charge rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-0.05642168220231745</charge>
+  <x rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-0.12193922638796269</x>
+  <y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-1.1804381343196668</y>
+  <z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-0.037063512482892615</z>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#A_1_0_8">
+  <rdf:type rdf:resource="#Atom"/>
+  <charge rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.06766016079774648</charge>
+  <x rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.6470028517319077</x>
+  <y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.6473092188952198</y>
+  <z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-0.4283038973309076</z>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#A_1_0_9">
+  <rdf:type rdf:resource="#Atom"/>
+  <charge rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.06766016079774648</charge>
+  <x rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.4007477530708474</x>
+  <y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-1.1841054916518543</y>
+  <z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-0.5587728726687979</z>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#A_1_0_10">
+  <rdf:type rdf:resource="#Atom"/>
+  <charge rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.06265697522445741</charge>
+  <x rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.8043777370511493</x>
+  <y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.0956553404134075</y>
+  <z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.0012581516793325428</z>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#A_1_0_11">
+  <rdf:type rdf:resource="#Atom"/>
+  <charge rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.06228022306008483</charge>
+  <x rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-1.629623281605501</x>
+  <y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.327557262146114</y>
+  <z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-0.012710106903508303</z>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#A_1_0_12">
+  <rdf:type rdf:resource="#Atom"/>
+  <charge rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.0622689201431801</charge>
+  <x rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-3.1125980716253774</x>
+  <y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.34329587047416454</y>
+  <z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-0.04207295736418686</z>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#A_1_0_13">
+  <rdf:type rdf:resource="#Atom"/>
+  <charge rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.06228022306008483</charge>
+  <x rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-2.116191564402267</x>
+  <y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-1.9503592165855759</y>
+  <z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-0.057925433101323545</z>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#A_1_0_14">
+  <rdf:type rdf:resource="#Atom"/>
+  <charge rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.06265697522445741</charge>
+  <x rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.31897526451908975</x>
+  <y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-2.1730491275807893</y>
+  <z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-0.0438623300023501</z>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#M_2">
+  <rdf:type rdf:resource="#Molecule"/>
+  <has_conformer rdf:resource="#C_2_0"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#C_2_0">
+  <rdf:type rdf:resource="#Conformer"/>
+  <has_atom rdf:resource="#A_2_0_0"/>
+  <has_atom rdf:resource="#A_2_0_1"/>
+  <has_atom rdf:resource="#A_2_0_2"/>
+  <has_atom rdf:resource="#A_2_0_3"/>
+  <has_atom rdf:resource="#A_2_0_4"/>
+  <has_atom rdf:resource="#A_2_0_5"/>
+  <has_atom rdf:resource="#A_2_0_6"/>
+  <has_atom rdf:resource="#A_2_0_7"/>
+  <has_atom rdf:resource="#A_2_0_8"/>
+  <energy rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">8.574270188075213</energy>
+  <dipole rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.2974430893579051</dipole>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#A_2_0_0">
+  <rdf:type rdf:resource="#Atom"/>
+  <charge rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-0.04183848615477239</charge>
+  <x rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-0.9534551842756148</x>
+  <y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.04780421609619026</y>
+  <z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.04249937663911896</z>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#A_2_0_1">
+  <rdf:type rdf:resource="#Atom"/>
+  <charge rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.04022058174908642</charge>
+  <x rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.4879186876831028</x>
+  <y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-0.32153931807429664</y>
+  <z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-0.18904973635963182</z>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#A_2_0_2">
+  <rdf:type rdf:resource="#Atom"/>
+  <charge rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-0.3966637147812598</charge>
+  <x rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.276977526346871</x>
+  <y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.3247836784511813</y>
+  <z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.7376732425087271</z>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#A_2_0_3">
+  <rdf:type rdf:resource="#Atom"/>
+  <charge rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.025373291592356653</charge>
+  <x rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-1.3570126123500212</x>
+  <y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.7339751954162034</y>
+  <z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-0.7332225613847179</z>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#A_2_0_4">
+  <rdf:type rdf:resource="#Atom"/>
+  <charge rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.025373291592356653</charge>
+  <x rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-1.5933209403261652</x>
+  <y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-0.8625698312047165</y>
+  <z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.021759475665728743</z>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#A_2_0_5">
+  <rdf:type rdf:resource="#Atom"/>
+  <charge rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.025373291592356653</charge>
+  <x rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-1.0710312763466439</x>
+  <y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.5964393608027803</y>
+  <z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.011162760505495</z>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#A_2_0_6">
+  <rdf:type rdf:resource="#Atom"/>
+  <charge rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.056069718921006324</charge>
+  <x rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.7874060542693289</x>
+  <y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-0.14060868171000282</y>
+  <z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-1.2357743239018328</z>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#A_2_0_7">
+  <rdf:type rdf:resource="#Atom"/>
+  <charge rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.056069718921006324</charge>
+  <x rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.5900278787458185</x>
+  <y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-1.4261096608429211</y>
+  <z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-0.04403048576654172</z>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#A_2_0_8">
+  <rdf:type rdf:resource="#Atom"/>
+  <charge rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.21002230656786322</charge>
+  <x rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.832489866253323</x>
+  <y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.047825041065579</y>
+  <z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.38898225209365683</z>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#M_3">
+  <rdf:type rdf:resource="#Molecule"/>
+  <has_conformer rdf:resource="#C_3_0"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#C_3_0">
+  <rdf:type rdf:resource="#Conformer"/>
+  <has_atom rdf:resource="#A_3_0_0"/>
+  <has_atom rdf:resource="#A_3_0_1"/>
+  <has_atom rdf:resource="#A_3_0_2"/>
+  <has_atom rdf:resource="#A_3_0_3"/>
+  <has_atom rdf:resource="#A_3_0_4"/>
+  <has_atom rdf:resource="#A_3_0_5"/>
+  <has_atom rdf:resource="#A_3_0_6"/>
+  <has_atom rdf:resource="#A_3_0_7"/>
+  <has_atom rdf:resource="#A_3_0_8"/>
+  <has_atom rdf:resource="#A_3_0_9"/>
+  <has_atom rdf:resource="#A_3_0_10"/>
+  <energy rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">13.691430954414434</energy>
+  <dipole rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.27918333611005086</dipole>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#A_3_0_0">
+  <rdf:type rdf:resource="#Atom"/>
+  <charge rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-0.05920938057632358</charge>
+  <x rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-0.11314710327389357</x>
+  <y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.1761939259883836</y>
+  <z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.00984211242459801</z>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#A_3_0_1">
+  <rdf:type rdf:resource="#Atom"/>
+  <charge rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-0.04382007477142178</charge>
+  <x rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-1.2281428144605322</x>
+  <y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.35293849110281456</y>
+  <z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.00996155619260643</z>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#A_3_0_2">
+  <rdf:type rdf:resource="#Atom"/>
+  <charge rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.02672876829526118</charge>
+  <x rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-1.0896687020828908</x>
+  <y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-1.0218977653415104</y>
+  <z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-0.001578524576467563</z>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#A_3_0_3">
+  <rdf:type rdf:resource="#Atom"/>
+  <charge rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-0.264736970888988</charge>
+  <x rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.12712573363246932</x>
+  <y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-1.5611569627805728</y>
+  <z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-0.012927402417256513</z>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#A_3_0_4">
+  <rdf:type rdf:resource="#Atom"/>
+  <charge rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.02672876829526118</charge>
+  <x rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.25429730730539</x>
+  <y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-0.8309905680431887</y>
+  <z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-0.013845083695706913</z>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#A_3_0_5">
+  <rdf:type rdf:resource="#Atom"/>
+  <charge rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-0.04382007477142178</charge>
+  <x rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.1347738147499231</x>
+  <y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.5504623530835775</y>
+  <z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-0.002364726572577227</z>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#A_3_0_6">
+  <rdf:type rdf:resource="#Atom"/>
+  <charge rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.06238032281528078</charge>
+  <x rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-0.17366004440377064</x>
+  <y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.2543304433572073</y>
+  <z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.01860983004700946</z>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#A_3_0_7">
+  <rdf:type rdf:resource="#Atom"/>
+  <charge rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.06389655370099773</charge>
+  <x rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-2.2125345172466306</x>
+  <y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.8149035195940035</y>
+  <z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.01934392639161287</z>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#A_3_0_8">
+  <rdf:type rdf:resource="#Atom"/>
+  <charge rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.08397776710017825</charge>
+  <x rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-1.9903754105409113</x>
+  <y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-1.628985982256101</y>
+  <z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-0.001029625649576745</z>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#A_3_0_9">
+  <rdf:type rdf:resource="#Atom"/>
+  <charge rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.08397776710017825</charge>
+  <x rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.232215080979789</x>
+  <y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-1.2517925365392681</y>
+  <z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-0.02286968573684692</z>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#A_3_0_10">
+  <rdf:type rdf:resource="#Atom"/>
+  <charge rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.06389655370099773</charge>
+  <x rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.059116655341048</x>
+  <y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.1459950818346463</y>
+  <z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-0.003142376407394511</z>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#M_4">
+  <rdf:type rdf:resource="#Molecule"/>
+  <has_conformer rdf:resource="#C_4_0"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#C_4_0">
+  <rdf:type rdf:resource="#Conformer"/>
+  <has_atom rdf:resource="#A_4_0_0"/>
+  <has_atom rdf:resource="#A_4_0_1"/>
+  <has_atom rdf:resource="#A_4_0_2"/>
+  <has_atom rdf:resource="#A_4_0_3"/>
+  <has_atom rdf:resource="#A_4_0_4"/>
+  <has_atom rdf:resource="#A_4_0_5"/>
+  <has_atom rdf:resource="#A_4_0_6"/>
+  <has_atom rdf:resource="#A_4_0_7"/>
+  <energy rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">8.412946289399578</energy>
+  <dipole rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.3779778185395182</dipole>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#A_4_0_0">
+  <rdf:type rdf:resource="#Atom"/>
+  <charge rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.03376759340677524</charge>
+  <x rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-0.9793892544124754</x>
+  <y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-0.06317124839458675</y>
+  <z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-0.15629402722500246</z>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#A_4_0_1">
+  <rdf:type rdf:resource="#Atom"/>
+  <charge rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.2996845531582142</charge>
+  <x rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.4677566109807096</x>
+  <y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.28301763783026873</y>
+  <z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-0.08165681561719962</z>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#A_4_0_2">
+  <rdf:type rdf:resource="#Atom"/>
+  <charge rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-0.2528204334965765</charge>
+  <x rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.8585613650696949</x>
+  <y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.4892678098956398</y>
+  <z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-0.17942097531690163</z>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#A_4_0_3">
+  <rdf:type rdf:resource="#Atom"/>
+  <charge rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-0.481433475172105</charge>
+  <x rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.4632511418018321</x>
+  <y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-0.6673388153092841</y>
+  <z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.0956323904442171</z>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#A_4_0_4">
+  <rdf:type rdf:resource="#Atom"/>
+  <charge rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.03484836041060298</charge>
+  <x rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-1.5215135084415876</x>
+  <y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.6873395860051299</y>
+  <z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-0.7238746532400148</z>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#A_4_0_5">
+  <rdf:type rdf:resource="#Atom"/>
+  <charge rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.03484836041060298</charge>
+  <x rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-1.380142510829607</x>
+  <y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-0.1391593025908061</y>
+  <z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.8724994755315657</z>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#A_4_0_6">
+  <rdf:type rdf:resource="#Atom"/>
+  <charge rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.03484836041060298</charge>
+  <x rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-1.1188014067150378</x>
+  <y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-1.086139532738176</y>
+  <z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-0.5983074977428839</z>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#A_4_0_7">
+  <rdf:type rdf:resource="#Atom"/>
+  <charge rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.29625668087188306</charge>
+  <x rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.2102775625464695</x>
+  <y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-0.5038161346981888</y>
+  <z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.7714221031662237</z>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#M_5">
+  <rdf:type rdf:resource="#Molecule"/>
+  <has_conformer rdf:resource="#C_5_0"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#C_5_0">
+  <rdf:type rdf:resource="#Conformer"/>
+  <has_atom rdf:resource="#A_5_0_0"/>
+  <has_atom rdf:resource="#A_5_0_1"/>
+  <has_atom rdf:resource="#A_5_0_2"/>
+  <has_atom rdf:resource="#A_5_0_3"/>
+  <has_atom rdf:resource="#A_5_0_4"/>
+  <has_atom rdf:resource="#A_5_0_5"/>
+  <has_atom rdf:resource="#A_5_0_6"/>
+  <has_atom rdf:resource="#A_5_0_7"/>
+  <has_atom rdf:resource="#A_5_0_8"/>
+  <has_atom rdf:resource="#A_5_0_9"/>
+  <has_atom rdf:resource="#A_5_0_10"/>
+  <has_atom rdf:resource="#A_5_0_11"/>
+  <has_atom rdf:resource="#A_5_0_12"/>
+  <energy rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">16.66182099429297</energy>
+  <dipole rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.30252097748299306</dipole>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#A_5_0_0">
+  <rdf:type rdf:resource="#Atom"/>
+  <charge rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-0.03912320679415518</charge>
+  <x rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-0.8613282442531961</x>
+  <y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.1416647074241906</y>
+  <z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.34697484722026156</z>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#A_5_0_1">
+  <rdf:type rdf:resource="#Atom"/>
+  <charge rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.10026953069290699</charge>
+  <x rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-0.29584923906009625</x>
+  <y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-0.2602306406312771</y>
+  <z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.1523323309252271</z>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#A_5_0_2">
+  <rdf:type rdf:resource="#Atom"/>
+  <charge rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-0.3186728575243238</charge>
+  <x rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-0.9713154309753858</x>
+  <y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-0.9490378680420982</y>
+  <z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-0.9254304113557053</z>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#A_5_0_3">
+  <rdf:type rdf:resource="#Atom"/>
+  <charge rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.3196779563386595</charge>
+  <x rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.149199339351158</x>
+  <y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-0.2315314707168323</y>
+  <z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-0.14009585019783696</z>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#A_5_0_4">
+  <rdf:type rdf:resource="#Atom"/>
+  <charge rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-0.25061308634665547</charge>
+  <x rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.6075364872484752</x>
+  <y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-0.7636566519011316</y>
+  <z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-1.2060546986730005</z>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#A_5_0_5">
+  <rdf:type rdf:resource="#Atom"/>
+  <charge rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-0.4800942338470611</charge>
+  <x rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.018444463997269</x>
+  <y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.392007027192128</y>
+  <z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.7741696585902663</z>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#A_5_0_6">
+  <rdf:type rdf:resource="#Atom"/>
+  <charge rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.025218003987175115</charge>
+  <x rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-0.365678094687538</x>
+  <y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.6020797576906782</y>
+  <z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.2102967225829457</z>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#A_5_0_7">
+  <rdf:type rdf:resource="#Atom"/>
+  <charge rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.025218003987175115</charge>
+  <x rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-0.7611015909575477</x>
+  <y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.7739749078945244</y>
+  <z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-0.5557920808530218</z>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#A_5_0_8">
+  <rdf:type rdf:resource="#Atom"/>
+  <charge rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.025218003987175115</charge>
+  <x rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-1.9359742616290512</x>
+  <y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.048089528746807</y>
+  <z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.5611917123545095</z>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#A_5_0_9">
+  <rdf:type rdf:resource="#Atom"/>
+  <charge rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.05817644439910558</charge>
+  <x rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-0.5007955135467312</x>
+  <y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-0.8039745537453096</y>
+  <z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0979730308730553</z>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#A_5_0_10">
+  <rdf:type rdf:resource="#Atom"/>
+  <charge rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.11919743270722125</charge>
+  <x rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-1.7508604979379856</x>
+  <y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-1.5350072923035585</y>
+  <z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-0.5478897571742796</z>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#A_5_0_11">
+  <rdf:type rdf:resource="#Atom"/>
+  <charge rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.11919743270722125</charge>
+  <x rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-0.33705200928934054</x>
+  <y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-1.5932781613277471</y>
+  <z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-1.4533580390437624</z>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#A_5_0_12">
+  <rdf:type rdf:resource="#Atom"/>
+  <charge rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.2963305757055556</charge>
+  <x rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.004774591739976</x>
+  <y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.1789007097196395</y>
+  <z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.6856825347513563</z>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#M_6">
+  <rdf:type rdf:resource="#Molecule"/>
+  <has_conformer rdf:resource="#C_6_0"/>
+  <has_conformer rdf:resource="#C_6_1"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#C_6_0">
+  <rdf:type rdf:resource="#Conformer"/>
+  <has_atom rdf:resource="#A_6_0_0"/>
+  <has_atom rdf:resource="#A_6_0_1"/>
+  <has_atom rdf:resource="#A_6_0_2"/>
+  <has_atom rdf:resource="#A_6_0_3"/>
+  <has_atom rdf:resource="#A_6_0_4"/>
+  <has_atom rdf:resource="#A_6_0_5"/>
+  <has_atom rdf:resource="#A_6_0_6"/>
+  <has_atom rdf:resource="#A_6_0_7"/>
+  <has_atom rdf:resource="#A_6_0_8"/>
+  <has_atom rdf:resource="#A_6_0_9"/>
+  <has_atom rdf:resource="#A_6_0_10"/>
+  <has_atom rdf:resource="#A_6_0_11"/>
+  <has_atom rdf:resource="#A_6_0_12"/>
+  <has_atom rdf:resource="#A_6_0_13"/>
+  <has_atom rdf:resource="#A_6_0_14"/>
+  <has_atom rdf:resource="#A_6_0_15"/>
+  <has_atom rdf:resource="#A_6_0_16"/>
+  <has_atom rdf:resource="#A_6_0_17"/>
+  <energy rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">28.110232588003385</energy>
+  <dipole rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.34391541438414985</dipole>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#A_6_0_0">
+  <rdf:type rdf:resource="#Atom"/>
+  <charge rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-0.06268921437937422</charge>
+  <x rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-1.652254043860701</x>
+  <y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.7779104738414977</y>
+  <z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.8513867916076164</z>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#A_6_0_1">
+  <rdf:type rdf:resource="#Atom"/>
+  <charge rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-0.04495303963755596</charge>
+  <x rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-0.6375452934899402</x>
+  <y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-0.2541463538100442</y>
+  <z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.3531452128681455</z>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#A_6_0_2">
+  <rdf:type rdf:resource="#Atom"/>
+  <charge rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-0.06268921437937422</charge>
+  <x rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-1.0979030903017362</x>
+  <y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-0.781207121822713</y>
+  <z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-0.9573372469550868</z>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#A_6_0_3">
+  <rdf:type rdf:resource="#Atom"/>
+  <charge rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-0.027553571150434268</charge>
+  <x rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.7047744724314876</x>
+  <y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.43632247415946385</y>
+  <z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.29818421989021365</z>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#A_6_0_4">
+  <rdf:type rdf:resource="#Atom"/>
+  <charge rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.04329631139781931</charge>
+  <x rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.8040312461091277</x>
+  <y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-0.5057511843579905</y>
+  <z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-0.18984376223392194</z>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#A_6_0_5">
+  <rdf:type rdf:resource="#Atom"/>
+  <charge rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-0.3963660786745106</charge>
+  <x rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.036529573423905</x>
+  <y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.14607434086665588</y>
+  <z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-0.2354433605840262</z>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#A_6_0_6">
+  <rdf:type rdf:resource="#Atom"/>
+  <charge rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.023309147880986335</charge>
+  <x rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-1.1417591648588188</x>
+  <y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.6177348887621397</y>
+  <z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.3628342600648842</z>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#A_6_0_7">
+  <rdf:type rdf:resource="#Atom"/>
+  <charge rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.023309147880986335</charge>
+  <x rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-2.2051298678998097</x>
+  <y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.205778413857592</y>
+  <z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-0.01306514720618714</z>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#A_6_0_8">
+  <rdf:type rdf:resource="#Atom"/>
+  <charge rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.023309147880986335</charge>
+  <x rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-2.408488625205465</x>
+  <y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.3146538569926287</y>
+  <z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.5136782239723066</z>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#A_6_0_9">
+  <rdf:type rdf:resource="#Atom"/>
+  <charge rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.029786573196650255</charge>
+  <x rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-0.5408626218252897</x>
+  <y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-1.0354937418257713</y>
+  <z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.1506883657090088</z>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#A_6_0_10">
+  <rdf:type rdf:resource="#Atom"/>
+  <charge rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.023309147880986335</charge>
+  <x rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-0.4005292836801373</x>
+  <y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-0.6903731297574398</y>
+  <z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-1.800249048135449</z>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#A_6_0_11">
+  <rdf:type rdf:resource="#Atom"/>
+  <charge rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.023309147880986335</charge>
+  <x rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-1.4433813625984804</x>
+  <y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-1.835533063570865</y>
+  <z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-0.7872253864394052</z>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#A_6_0_12">
+  <rdf:type rdf:resource="#Atom"/>
+  <charge rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.023309147880986335</charge>
+  <x rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-2.0308788724074365</x>
+  <y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-0.2556890057769792</y>
+  <z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-1.3032592388696838</z>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#A_6_0_13">
+  <rdf:type rdf:resource="#Atom"/>
+  <charge rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.02926462336700656</charge>
+  <x rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.7038307669778489</x>
+  <y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.3761904455826475</y>
+  <z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-0.2696806266766296</z>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#A_6_0_14">
+  <rdf:type rdf:resource="#Atom"/>
+  <charge rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.02926462336700656</charge>
+  <x rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0063951651712464</x>
+  <y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.6988829629584105</y>
+  <z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.3332992945301008</z>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#A_6_0_15">
+  <rdf:type rdf:resource="#Atom"/>
+  <charge rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.056373665747195975</charge>
+  <x rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.5391633338480648</x>
+  <y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-0.8795383730568028</y>
+  <z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-1.198421670673707</z>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#A_6_0_16">
+  <rdf:type rdf:resource="#Atom"/>
+  <charge rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.056373665747195975</charge>
+  <x rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.880004392010809</x>
+  <y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-1.4015381281309345</y>
+  <z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.4562650534360153</z>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#A_6_0_17">
+  <rdf:type rdf:resource="#Atom"/>
+  <charge rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.21003676811245672</charge>
+  <x rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.884003276155322</x>
+  <y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0657222450885098</y>
+  <z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-0.5649559343042243</z>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#C_6_1">
+  <rdf:type rdf:resource="#Conformer"/>
+  <has_atom rdf:resource="#A_6_1_0"/>
+  <has_atom rdf:resource="#A_6_1_1"/>
+  <has_atom rdf:resource="#A_6_1_2"/>
+  <has_atom rdf:resource="#A_6_1_3"/>
+  <has_atom rdf:resource="#A_6_1_4"/>
+  <has_atom rdf:resource="#A_6_1_5"/>
+  <has_atom rdf:resource="#A_6_1_6"/>
+  <has_atom rdf:resource="#A_6_1_7"/>
+  <has_atom rdf:resource="#A_6_1_8"/>
+  <has_atom rdf:resource="#A_6_1_9"/>
+  <has_atom rdf:resource="#A_6_1_10"/>
+  <has_atom rdf:resource="#A_6_1_11"/>
+  <has_atom rdf:resource="#A_6_1_12"/>
+  <has_atom rdf:resource="#A_6_1_13"/>
+  <has_atom rdf:resource="#A_6_1_14"/>
+  <has_atom rdf:resource="#A_6_1_15"/>
+  <has_atom rdf:resource="#A_6_1_16"/>
+  <has_atom rdf:resource="#A_6_1_17"/>
+  <energy rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">19.069737377633835</energy>
+  <dipole rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.3441773627481773</dipole>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#A_6_1_0">
+  <rdf:type rdf:resource="#Atom"/>
+  <charge rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-0.06268921437937422</charge>
+  <x rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-1.4793312992629626</x>
+  <y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.880652090918112</y>
+  <z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.4312173437168022</z>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#A_6_1_1">
+  <rdf:type rdf:resource="#Atom"/>
+  <charge rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-0.04495303963755596</charge>
+  <x rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-0.7002215099366489</x>
+  <y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-0.15470617686402563</y>
+  <z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-0.3394251371821239</z>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#A_6_1_2">
+  <rdf:type rdf:resource="#Atom"/>
+  <charge rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-0.06268921437937422</charge>
+  <x rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-0.6910674059174007</x>
+  <y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-1.4160971228155903</y>
+  <z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.4569501487929956</z>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#A_6_1_3">
+  <rdf:type rdf:resource="#Atom"/>
+  <charge rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-0.027553571150434268</charge>
+  <x rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.6349812644425467</x>
+  <y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.31415549756845546</y>
+  <z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-0.7996632912004384</z>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#A_6_1_4">
+  <rdf:type rdf:resource="#Atom"/>
+  <charge rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.04329631139781931</charge>
+  <x rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.5682999828416462</x>
+  <y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.7326566386219554</y>
+  <z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.27791823905135205</z>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#A_6_1_5">
+  <rdf:type rdf:resource="#Atom"/>
+  <charge rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-0.3963660786745106</charge>
+  <x rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.8228316510129972</x>
+  <y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-0.3193848803553565</y>
+  <z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.1536406216210766</z>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#A_6_1_6">
+  <rdf:type rdf:resource="#Atom"/>
+  <charge rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.023309147880986335</charge>
+  <x rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-1.7503261445207423</x>
+  <y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.747926968072495</y>
+  <z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-0.18203396193423574</z>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#A_6_1_7">
+  <rdf:type rdf:resource="#Atom"/>
+  <charge rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.023309147880986335</charge>
+  <x rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-2.4477806816254186</x>
+  <y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.3988521969916477</y>
+  <z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.7222226891529613</z>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#A_6_1_8">
+  <rdf:type rdf:resource="#Atom"/>
+  <charge rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.023309147880986335</charge>
+  <x rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-0.9769689941429825</x>
+  <y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.150400089242649</y>
+  <z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.3863791474992904</z>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#A_6_1_9">
+  <rdf:type rdf:resource="#Atom"/>
+  <charge rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.029786573196650255</charge>
+  <x rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-1.310757860240853</x>
+  <y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-0.3517197616168118</y>
+  <z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-1.2608575770271422</z>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#A_6_1_10">
+  <rdf:type rdf:resource="#Atom"/>
+  <charge rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.023309147880986335</charge>
+  <x rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-0.4523202809004285</x>
+  <y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-1.242350350888789</y>
+  <z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.5285557162795234</z>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#A_6_1_11">
+  <rdf:type rdf:resource="#Atom"/>
+  <charge rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.023309147880986335</charge>
+  <x rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-0.1228810497491218</x>
+  <y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-2.2381698520583377</y>
+  <z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.003024538856197696</z>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#A_6_1_12">
+  <rdf:type rdf:resource="#Atom"/>
+  <charge rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.023309147880986335</charge>
+  <x rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-1.767642117744606</x>
+  <y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-1.7595747933202712</y>
+  <z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.47252388429270775</z>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#A_6_1_13">
+  <rdf:type rdf:resource="#Atom"/>
+  <charge rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.02926462336700656</charge>
+  <x rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.1004052444111123</x>
+  <y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-0.5112822853293448</y>
+  <z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-1.363448763214261</z>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#A_6_1_14">
+  <rdf:type rdf:resource="#Atom"/>
+  <charge rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.02926462336700656</charge>
+  <x rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.4762037950113556</x>
+  <y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.158585339259175</y>
+  <z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-1.5014169033453424</z>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#A_6_1_15">
+  <rdf:type rdf:resource="#Atom"/>
+  <charge rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.056373665747195975</charge>
+  <x rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.2812980676606534</x>
+  <y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.6760023627448726</y>
+  <z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.7887638631162731</z>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#A_6_1_16">
+  <rdf:type rdf:resource="#Atom"/>
+  <charge rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.056373665747195975</charge>
+  <x rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.5515695158828757</x>
+  <y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.9617555405859427</y>
+  <z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-0.2293210980601711</z>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#A_6_1_17">
+  <rdf:type rdf:resource="#Atom"/>
+  <charge rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.21003676811245672</charge>
+  <x rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.2637078227779925</x>
+  <y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-1.027701500756747</y>
+  <z rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.6150379033757782</z>
+</owl:NamedIndividual>
+
+
+</rdf:RDF>

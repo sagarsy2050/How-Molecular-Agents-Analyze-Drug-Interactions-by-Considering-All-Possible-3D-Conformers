@@ -1,0 +1,14 @@
+
+#### 2. `requirements.txt`
+
+rdkit-pypi
+pyscf
+owlready2
+streamlit
+streamlit-aggrid
+py3Dmol
+stmol
+ollama
+numpy
+pandas
+scipy
