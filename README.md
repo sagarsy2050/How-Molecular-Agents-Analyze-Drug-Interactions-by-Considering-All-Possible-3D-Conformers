@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # Atomic 3D + Functional Ontology + 50 AI Agents – ULTIMATE DRUG DISCOVERY ENGINE
 
 **THE ONE THAT WORKS EVERYWHERE – ZERO ERRORS – GUARANTEED**
@@ -81,4 +81,3 @@ atomic-3d-ontology-50-agents/
 │   └── agents.json
 └── .gitignore
 
->>>>>>> 986665ca4913696542416615957688482fae1447
