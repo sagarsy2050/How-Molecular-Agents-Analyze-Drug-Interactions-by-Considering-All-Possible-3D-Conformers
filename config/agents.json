@@ -1,0 +1,16 @@
+{
+  "agents": [
+    "BondLengthAgent", "BondAngleAgent", "DihedralAgent", "TorsionProfileAgent",
+    "GasteigerChargeAgent", "DipoleMomentAgent", "PMIAgent", "AsphericityAgent",
+    "RadiusOfGyrationAgent", "RingStrainAgent", "PlanarityAgent", "AromaticityAgent",
+    "FunctionalGroupAgent", "HBAgent", "HDAgent", "HalogenBondAgent",
+    "PiStackingAgent", "CationPiAgent", "LonePairAgent", "HybridizationAgent",
+    "ConformerEnergyAgent", "ShapeAgent", "VolumeAgent", "SurfaceAreaAgent",
+    "ElectrostaticAgent", "StericHindranceAgent", "ChiralityAgent", "PharmacophoreAgent",
+    "InertialTensorAgent", "SymmetryAgent", "RotatableBondAgent", "FlexibilityAgent",
+    "AtomicPolarizabilityAgent", "AtomicVolumeAgent", "CrippenLogPAgent",
+    "EnergyGapAgent", "BoltzmannWeightAgent", "LowEnergyPopulationAgent",
+    "GlobalMinimumAgent", "ConformerRMSDAgent", "HydrogenBondGeometryAgent",
+    "SolventAccessibleAgent", "PrincipalAxisAgent", "FrontierOrbitalAgent"
+  ]
+}
