@@ -25,17 +25,17 @@ agent interactions.
 
 ``` html
 <video controls width="720">
-  <source src="media/video/The_AI_Drug_Discovery_Engine.mp4" type="video/mp4">
+  <source src="The_AI_Drug_Discovery_Engine.mp4" type="video/mp4">
 </video>
 ```
 
 ``` html
 <audio controls>
-  <source src="media/audio/50_AI_Agents_description.mp3" type="audio/mpeg">
+  <source src="50_AI_Agents_description.mp3" type="audio/mpeg">
 </audio>
 ```
 
-![Pipeline map and flowchart](images/map_flowchart.png)
+![Pipeline map and flowchart](images/map.png)
 
 ------------------------------------------------------------------------
 
